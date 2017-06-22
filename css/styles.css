@@ -1,0 +1,296 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* search-field */
+
+.form-control {
+  border: 1px solid #eaeaea;
+  border-radius: 0;
+  font-size: 1.3em;
+  font-weight: lighter;
+  height: 3em;
+  letter-spacing: 0.1em;
+}
+
+.search-field {
+  margin: 1.5em;
+}
+
+.inner {
+  position: relative;
+}
+
+.inner .glyphicon {
+  color: #eaeaea;
+  font-size: 1.9em;
+  padding: 0.5em;
+  pointer-events: none;
+  position: absolute;
+  -webkit-text-stroke: 2px white;
+}
+
+.left .glyphicon  {
+  left:  0px;
+}
+
+.right .glyphicon {
+  right: 0px;
+}
+
+input  {
+  padding-left: 30px;
+}
+
+.right input {
+  padding-right: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.box {
+  height: 240px;
+  margin-top: 30px;
+  border: 2px solid #aaa;
+  border-radius: 10px;
+}
+
+/* logos */
+
+.logo {
+  border: 2px solid #aaa;
+  border-left: 0;
+  border-top: 0;
+  display: inline-block;
+  height: 60%;
+  padding-left: 10px;
+  padding-top: 40px;
+  width: 50%;
+}
+
+/* reduction amount */
+
+.reduction {
+  background-color: #f1fde8;
+  border-bottom: 2px solid #aaa;
+  border-top-right-radius: 10px;
+  float: right;
+  height: 60%;
+  text-align: center;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.reductionTextOne {
+  color: #aff37a;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+.reductionTextTwo {
+  color: #7aec22;
+  font-size: 2.5em;
+  line-height: 0.6;
+}
+
+/* brand text */
+
+.brandTextDesktop {
+  bottom: 10px;
+  position: relative;
+}
+
+.brandTextTopLine, .brandTextBottomLine {
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+.brandTextTopLine {
+  font-size: 1.6em;
+  letter-spacing: 0.5px;
+}
+
+.brandTextBottomLine {
+  color: #c7c7c7;
+  font-size: 1.1em;
+  letter-spacing: 0.8px;
+}
+
+/* buttons */
+
+.btn {
+  border: 2px solid #15dff0;
+  border-radius: 8px;
+  bottom: 40px;
+  color: #15dff0;
+  float: right;
+  font-size: 1.4em;
+  letter-spacing: 0.8px;
+  position: relative;
+  right: 10px;
+}
+
+/* media queries */
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+  .form-control {
+  border-radius: 5px;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .logo {
+    border: 0;
+    margin-right: 2em;
+    width: 4.6em;
+  }
+
+  hr {
+    display: block;
+    margin: 2em -3em;
+  }
+
+  .box {
+    visibility: hidden;
+  }
+
+  /* discount amount */
+
+  .discount {
+    background-color: #f1fde8;
+    border-radius: 0.50em;
+    height: 4.6em;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 4.6em;
+  }
+
+  .discountTextOne {
+    color: #aff37a;
+    font-size: 1em;
+  }
+
+  .discountTextTwo {
+    color: #7aec22;
+    font-size: 1.25em;
+  }
+
+  .discountTextOne {
+    margin: 0.8em 0 0 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+    /* generates dotted truncated text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  h5 {
+    color: #c7c7c7;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    /* generates dotted truncated text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .button {
+    margin: auto;
+    padding: 1em;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+  .form-control {
+  border-radius: 5px;
+  }
+
+  hr {
+    display: block;
+    margin: 2em -3em;
+  }
+
+  .row {
+    margin: 0;
+  }
+
+  .logo {
+    border: 0;
+    margin-right: 2em;
+    width: 4.6em;
+    padding-top: 0;
+  }
+
+  .box {
+    visibility: hidden;
+  }
+
+  /* discount amount */
+
+  .discount {
+    background-color: #f1fde8;
+    border-radius: 0.50em;
+    height: 4.6em;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 4.6em;
+  }
+
+  .discountTextOne {
+    color: #aff37a;
+    font-size: 1em;
+  }
+
+  .discountTextTwo {
+    color: #7aec22;
+    font-size: 1.25em;
+  }
+
+  .discountTextOne {
+    margin: 0.8em 0 0 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.5em;
+    /* generates dotted truncated text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  h5 {
+    color: #c7c7c7;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    /* generates dotted truncated text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .button {
+    margin: auto;
+    padding: 1em;
+  }
+
+}
